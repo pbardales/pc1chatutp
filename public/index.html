@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTP - CHAT</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1 style="text-align: center;background-color: crimson" >UTP - CHAT </h1>
+
+    <div id="chat-container">
+        <div id="chat-window">
+            <div style="text-align: center;" id="output">Estas conectado al chat</div>
+            <br><br>
+            <div style="text-align: center;" id="actions">Nuevo usuario esta conectado al chat</div>
+        </div>
+        <input type="text" id="username" placeholder="Ingrese su usuario">
+     
+        <input type="text" id="message" placeholder="Escriba su mensaje">
+        <button style="background-color: brown;" id="send">ENVIAR</button>
+    
+        <div>
+            <label for="">Nombre</label>
+            <input class="input" type="text">
+        </div>
+
+    </div>
+
+    <script src="/socket.io/socket.io.js" charset="utf-8"></script>
+    <script src="chat.js" charset="utf-8"></script>
+</body>
+</html>
